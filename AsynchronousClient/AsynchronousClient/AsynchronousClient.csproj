@@ -79,7 +79,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ProjectReference Include="..\..\UdemyAsyncSocketServer\LahoreSocketAsync\LahoreSocketAsync.csproj">
+=======
+    <ProjectReference Include="..\LahoreSocketAsync\LahoreSocketAsync.csproj">
+>>>>>>> Haran
       <Project>{d2adba01-689e-4dd5-9c1b-e92fb76ea226}</Project>
       <Name>LahoreSocketAsync</Name>
     </ProjectReference>

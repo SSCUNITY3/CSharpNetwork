@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D4B9B579-47C7-4AD4-A218-D0BBC571C045}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>UdemyAsyncSocketClient</RootNamespace>
-    <AssemblyName>UdemyAsyncSocketClient</AssemblyName>
+    <ProjectGuid>{D2ADBA01-689E-4DD5-9C1B-E92FB76EA226}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LahoreSocketAsync</RootNamespace>
+    <AssemblyName>LahoreSocketAsync</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,24 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="LahoreSocketClient.cs" />
+    <Compile Include="LahoreSocketServer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\UdemyAsyncSocketServer\LahoreSocketAsync\LahoreSocketAsync.csproj">
-      <Project>{d2adba01-689e-4dd5-9c1b-e92fb76ea226}</Project>
-      <Name>LahoreSocketAsync</Name>
-    </ProjectReference>
-<<<<<<< HEAD
-    <ProjectReference Include="AsynchronousClient.csproj">
-      <Project>{d421521f-d2cf-464e-93e5-27d61c637aa5}</Project>
-      <Name>AsynchronousClient</Name>
-    </ProjectReference>
-=======
->>>>>>> Haran
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
