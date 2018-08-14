@@ -16,5 +16,15 @@ namespace AsynchronousClient
         {
             InitializeComponent();
         }
+
+        private void ConnectButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sendButton_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Debug.Write("something");
+        }
     }
 }
