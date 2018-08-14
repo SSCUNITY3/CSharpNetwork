@@ -11,7 +11,7 @@ namespace LahoreSocketAsync
 {
     public class LahoreSocketServer
     {
-        public string ServerAddress;
+        public string ServerAddress;  
         public IPAddress mIP;
         int mPort;
         TcpListener mTCPListener;
