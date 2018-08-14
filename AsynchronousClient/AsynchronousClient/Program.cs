@@ -9,9 +9,26 @@ using LahoreSocketAsync;
 namespace UdemyAsyncSocketClient
 {
     class Program
+
     {
-        static void Main(string[] args)
+       /* struct dataFormat
         {
+            int id;
+            string instructorName;
+            float floatVal0;
+            float floatVal1;
+            float floatVal2;
+        }*/
+        static void Main(string[] args)
+
+        {
+            //string data = "1;Instructor1;32.8;102.9;43.9";
+            //string[] fetchedData = data.Split(';');
+            //for(int i=0; i<fetchedData.Length; i++)
+            //{
+             //   Console.Write(fetchedData[i]);
+            //}
+
             LahoreSocketClient client = new LahoreSocketClient();
 
             Console.WriteLine("*** Welcome to Socket Client Starter Example by Naeem Akram Malik ***");
