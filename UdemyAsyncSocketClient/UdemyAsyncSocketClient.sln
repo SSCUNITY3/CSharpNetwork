@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyAsyncSocketClient", "UdemyAsyncSocketClient\UdemyAsyncSocketClient.csproj", "{D4B9B579-47C7-4AD4-A218-D0BBC571C045}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LahoreSocketAsync", "D:\TCPIPSocketProgrammingRedo\Code\UdemyAsyncSocketServer\LahoreSocketAsync\LahoreSocketAsync.csproj", "{D2ADBA01-689E-4DD5-9C1B-E92FB76EA226}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LahoreSocketAsync", "..\UdemyAsyncSocketServer\LahoreSocketAsync\LahoreSocketAsync.csproj", "{D2ADBA01-689E-4DD5-9C1B-E92FB76EA226}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C1DB266-A4B8-409D-A3B6-3A28D190E4C3}
 	EndGlobalSection
 EndGlobal

@@ -11,6 +11,7 @@ namespace LahoreSocketAsync
 {
     public class LahoreSocketClient
     {
+        
         IPAddress mServerIPAddress;
         int mServerPort;
         TcpClient mClient;
@@ -85,7 +86,7 @@ namespace LahoreSocketAsync
             }
         }
 
-                public async Task SendToServer(string strInputUser)
+        public async Task SendToServer(string strInputUser)
         {
             if (string.IsNullOrEmpty(strInputUser))
             {

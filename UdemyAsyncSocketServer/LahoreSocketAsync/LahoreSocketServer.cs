@@ -7,12 +7,12 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace LahoreSocketAsync
 {
     public class LahoreSocketServer
     {
-        IPAddress mIP;
+        public string ServerAddress;
+        public IPAddress mIP;
         int mPort;
         TcpListener mTCPListener;
 
@@ -25,7 +25,7 @@ namespace LahoreSocketAsync
             mClients = new List<TcpClient>();
         }
 
-        public async void StartListeningForIncomingConnection(IPAddress ipaddr = null, int port = 23000)
+        public async void StartListeningForIncomingConnection(IPAddress ipaddr = null, int port = 3009)
         {
             if (ipaddr == null)
             {
@@ -34,7 +34,7 @@ namespace LahoreSocketAsync
 
             if (port <= 0)
             {
-                port = 23000;
+                port = 3009;
             }
 
             mIP = ipaddr;
@@ -42,7 +42,7 @@ namespace LahoreSocketAsync
 
             System.Diagnostics.Debug.WriteLine(string.Format("IP Address: {0} - Port: {1}", mIP.ToString(), mPort));
 
-            mTCPListener = new TcpListener(mIP, mPort);
+            mTCPListener = new TcpListener(new IPEndPoint(mIP, mPort));
 
             try
             {
