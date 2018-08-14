@@ -11,7 +11,7 @@ namespace LahoreSocketAsync
 {
     public class LahoreSocketClient
     {
-        
+        public static string inputMessage = null;        
         IPAddress mServerIPAddress;
         int mServerPort;
         TcpClient mClient;
@@ -21,6 +21,10 @@ namespace LahoreSocketAsync
             mClient = null;
             mServerPort = -1;
             mServerIPAddress = null;
+        }
+        public static void  setNull()
+        {
+            inputMessage=null;
         }
 
         public IPAddress ServerIPAddress
@@ -148,9 +152,9 @@ namespace LahoreSocketAsync
                         mClient.Close();
                         break;
                     }
-                    Console.WriteLine(string.Format("Received bytes: {0} - Message: {1}",
-                        readByteCount, new string(buff)));
 
+                    inputMessage = new string(buff);
+                    Console.WriteLine(inputMessage);
                     Array.Clear(buff, 0, buff.Length);
                 }
             }
