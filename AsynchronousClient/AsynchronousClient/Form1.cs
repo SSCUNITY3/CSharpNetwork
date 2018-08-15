@@ -85,7 +85,6 @@ namespace AsynchronousClient
             }
             else
                 serverMessage.Text = "serverMessage here!!";
-            
         }
     }
 }
